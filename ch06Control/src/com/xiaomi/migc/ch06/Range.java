@@ -27,4 +27,7 @@ public class Range {
         }
         return result;
     }
+     protected void sun(){
+        System.out.println("haha");
+    }
 }

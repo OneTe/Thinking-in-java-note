@@ -8,4 +8,8 @@ public class Print1{
         System.out.print(obj);
        // System.out.println();
     }
+    public static void main(String[] args){
+        Range r = new Range();
+        r.sun();
+    }
 }
