@@ -2,8 +2,8 @@ package com.xiaomi.migc.ch06;
 
 import com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BIConversion;
 
-/**
- * Created by wangcheng on 2017/3/9.
+/**创建一个ConnectionManager类，该类管理一个元素为Connection对象的固定数组。客户端程序员不能直接创建Connection对象，而只能
+ *通过ConnectionManager中的某个static方法来获取他们。当ConnectionManager之中不再有对象时，它会返回Null应用，再main中检测这些类
  */
 class Connection{
     private static int count = 0;
@@ -25,7 +25,7 @@ public class ConnectionManager {
     //构造代码块：http://blog.csdn.net/chenssy/article/details/14486833
     {
         for (Connection x : ca)
-        x = Connection.makeConnection();
+            x = Connection.makeConnection();
    }
     public static Connection getConnection(){
         if(howManyLeft > 0){
