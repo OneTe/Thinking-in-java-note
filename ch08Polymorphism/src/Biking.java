@@ -1,10 +1,19 @@
+// TIJ4 Chapter Polymorphism, Exercise 5, page 286
+/* Starting from Exercise 1, add a wheels() method in Cycle, which returns the
+* number of wheels. MOdify ride() to call wheels() and verify that polymorphism
+* works.
+*/
 /**
  * Created by wangcheng on 2017/4/7.
  */
 class Cycle{
     private String name = "Cycle";
+    private int wheels = 0;
     public static void travel(Cycle c){
         System.out.println("Cycle.ride()" + c);
+    }
+    public int wheels(){
+        return wheels;
     }
     public String toString(){
         return this.name;
@@ -12,23 +21,39 @@ class Cycle{
 
 }
 class Unicycle extends Cycle{
-    public static void ride(Unicycle c){
-        System.out.println("Unicycle.ride()" + c);
+    private String name = "Unicycle";
+    private int wheels = 1;
+    @Override public int wheels(){
+        return wheels;
+    }
+    public String toString() {
+        return this.name;
     }
 }
 class Bicycle extends Cycle{
-    public static void ride(Bicycle c){
-        System.out.println("Bicycle.ride()" + c);
+    private String name = "Bicycle";
+    private int wheels = 2;
+    @Override public int wheels(){
+        return wheels;
+    }
+    public String toString() {
+        return this.name;
     }
 }
 class Tricycle extends Cycle{
-    public static void ride(Tricycle c){
-        System.out.println("Tricycle.ride()" + c);
+    private String name = "Tricycle";
+    private int wheels = 3;
+    @Override public int wheels(){
+        return wheels;
+    }
+    public String toString() {
+        return this.name;
     }
 }
 public class Biking {
     public static void ride(Cycle c){
         c.travel(c);
+        System.out.println("wheels: " + c.wheels());
     }
     public static void main(String[] args) {
         Cycle c= new Cycle();
