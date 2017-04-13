@@ -10,7 +10,12 @@ package polymorphism;
  * Created by wangcheng on 2017/4/13.
  */
 class Meal{
+    private String x = printx();
     Meal(){System.out.println("Meal()");}
+    static String printx(){
+        System.out.println("xxxxxx");
+        return "aa";
+    }
 }
 class Bread{
     Bread(){System.out.println("Bread()");}
