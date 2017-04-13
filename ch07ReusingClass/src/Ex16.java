@@ -21,6 +21,7 @@ class Amphibian {
 }
 
 public class Ex16 extends Amphibian {
+  //  void eat(){System.out.println("Ex16 eat");}
     public static void main(String[] args) {
         Ex16 f = new Ex16();
         // call base-class methods:
