@@ -4,6 +4,9 @@ package polymorphism;
  * Created by wangcheng on 2017/4/13.
  */
 class StaticSuper{
+    public void StaticSuper(){
+        System.out.println("aaa");
+    }
     public static String staticGet(){
         return "Base staticGet()";
     }
