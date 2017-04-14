@@ -15,4 +15,12 @@ public class RandomRodentGenerator {
             case 2: return new Squirrel();
         }
     }
+    public RodentO next1(){
+        switch(rand.nextInt(3)){
+            default:
+            case 0: return new MouseO();
+            case 1: return new RatO();
+            case 2: return new SquirrelO();
+        }
+    }
 }
