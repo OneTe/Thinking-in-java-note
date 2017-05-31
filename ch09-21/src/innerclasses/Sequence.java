@@ -1,5 +1,5 @@
 package innerclasses;
-//内部类有它的外围类所以元素的访问权
+//内部类有它的外围类所有元素的访问权
 /**
  * Created by wangcheng on 2017/5/19.
  */
