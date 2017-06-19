@@ -4,8 +4,9 @@ package innerclasses;
  * Created by wangcheng on 2017/6/13.
  */
 public class Parcel9 {
+    //在JDK1.8之后不再需要显示的声明为final，因为这种情况下这个局部变量默认是final的，这是编译器为我们做的，这是JDK1.8的新特性，所以前面的结论仍然成立）
     //Argument must be final to use inside anonymous inner class
-    public Destination destination( String dest) {
+    public Destination destination( final String dest) {
         return new Destination() {
             private String label;
 
