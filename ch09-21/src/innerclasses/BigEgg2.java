@@ -24,3 +24,11 @@ public class BigEgg2 extends Egg2{
         eg.g();
     }
 }
+
+/*
+Egg2.Yolk()
+New Egg2()
+Egg2.Yolk()
+BigEgg2.Yolk()
+BigEgg2.Yolk.f()
+ */
