@@ -6,7 +6,7 @@ package innerclasses;
 public class testHashCode {
     public static void main(String[] args){
        // String str = "139115052";
-        String str = "3416451";
+        String str = "3412292";
         int hashCode = str.hashCode();
         if(hashCode < 0){
             hashCode = -hashCode;
