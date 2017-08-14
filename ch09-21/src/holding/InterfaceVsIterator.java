@@ -15,6 +15,7 @@ public class InterfaceVsIterator {
         System.out.println();
     }
     public static void display(Collection<Pet> pets){
+        //使用foreach语法，也可以是实现了Iterable的类，其实还是调用了iterator方法
         for(Pet p : pets){
             System.out.print(p.id() + ":" + p + " ");
         }
@@ -31,11 +32,11 @@ public class InterfaceVsIterator {
         }
         display(petList);
         display(petSet);
-        display(petList.iterator());
-        display(petSet.iterator());
-        System.out.println(petMap);
-        System.out.println(petMap.keySet());
-        display(petMap.values());
-        display(petMap.values().iterator());
+//        display(petList.iterator());
+//        display(petSet.iterator());
+//        System.out.println(petMap);
+//        System.out.println(petMap.keySet());
+//        display(petMap.values());
+//        display(petMap.values().iterator());
     }
 }
