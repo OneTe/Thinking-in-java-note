@@ -1,5 +1,10 @@
 package exceptions;
 
+// TIJ4 Chapter Exceptions, Exercise 17, page 477
+/* Modify pholymorphism/Frog.java so that it uses try-finally to
+* guarantee proper cleanup, and show that this works even if you
+* return from the middle of the try-finally.
+*/
 /**
  * Created by wangcheng on 2017/8/23.
  */
