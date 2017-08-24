@@ -22,7 +22,6 @@ public class LostMessageFound19 {
             } finally {
                 lmf.dispose();
             }
-
         } catch(Exception e) {
             System.out.println(e);
         }
