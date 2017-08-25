@@ -43,7 +43,7 @@ public class CleanupIdiom {
             try {
                 NeedsCleanup2 nc5 = new NeedsCleanup2();
                 try {
-                    //...something
+                    //...
                 }finally {
                     nc5.dispose();
                 }
