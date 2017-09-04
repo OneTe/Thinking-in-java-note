@@ -7,8 +7,8 @@ interface HasBatteries{}
 interface Waterproof{}
 interface Shoots{}
 
-
-class Toy {
+class T{}
+class Toy extends T{
     // With default constructor commented out will be
     // unable to instantiate this Toy, super of FancyToy:
     // Toy() {}
