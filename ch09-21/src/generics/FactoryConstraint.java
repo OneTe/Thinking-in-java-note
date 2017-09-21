@@ -1,7 +1,6 @@
 package generics;
-
-import typeinfo.factory.Factory;
-
+//在InstantiateGenericType.java中，不能生成类型实例不是在编译期捕获的错误（Integer无法生成）
+//改为显示工厂，这样在编译期就能得到检查
 /**
  * Created by wangcheng  on 2017/9/21.
  */
